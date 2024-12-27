@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<script type="text/javascript">
+		function add()
+		{
+			var x = parseInt(document.getElementById("sum1").value);
+			var y = parseInt(document.getElementById("sum2").value);
+			var z = x+y;
+			document.getElementById("ans").value = z;
+		}
+		function sub()
+		{
+			var x = parseInt(document.getElementById("sum1").value);
+			var y = parseInt(document.getElementById("sum2").value);
+			var z = x-y;
+			document.getElementById("ans").value = z;
+		}
+		function multiply()
+		{
+			var x = parseInt(document.getElementById("sum1").value);
+			var y = parseInt(document.getElementById("sum2").value);
+			var z = x*y;
+			document.getElementById("ans").value = z;
+		}
+		function divide()
+		{
+			var x = parseInt(document.getElementById("sum1").value);
+			var y = parseInt(document.getElementById("sum2").value);
+			var z = x/y;
+			document.getElementById("ans").value = z;
+		}
+</script>
+<style type="text/css">
+	.button1{
+		width: 50%;
+		color:hotpink;
+		background-color: blue;
+		border:0;
+		font-weight: bold;}
+		.fle{
+			width:70%;
+		background-color:pink;
+		font-weight: bold;
+		}
+	
+</style>
+</head>
+<body bgcolor="beige">
+	<h1 align="center">CALCULATOR</h1>
+	<form>
+	<table border="2" width="80%" cellpadding="15" cellspacing="6" align="center">
+		<tr bgcolor="white">
+			<td colspan = "2" align="center"><input type = "text" id = "sum1" class="fle" placeholder = "Enter first no"> </td>
+			<td colspan="2" align="center"><input type="text" id ="sum2" class="fle"placeholder="Enter second no"></td></tr>
+				<tr bgcolor="lightblue">
+					<td colspan="1"align="center"><input type="button" class="button1" value="1"></td>
+					<td colspan="1"align="center"><input type="button" class="button1" value="2"></td>
+						<td colspan="1"align="center"><input type="button" class="button1" value="3"></td>
+						<td colspan="1"align="center"><input type="button" class="button1" value="4"></td>
+							
+				</tr>
+				<tr bgcolor="lightblue">
+					<td colspan="1" align="center"><input type="button" class="button1" value="5"></td>
+					<td colspan="1"align="center"><input type="button" class="button1" value="6"></td>
+						<td colspan="1"align="center"><input type="button" class="button1" value="7"></td>
+						<td colspan="1"align="center"><input type="button" class="button1" value="8"></td>
+
+				</tr>
+				<tr bgcolor="lightblue" align ="center">
+					<td colspan="2" align="center"><input type="button" class="button1" value="9"></td>
+					<td colspan="2"align="center"><input type="button" class="button1" value="0"></td>
+				</tr>
+	<tr bgcolor="white">
+			<td colspan="1" align="center" width="10%"><input type="button" value="+"onclick="add()"></td>
+			<td colspan="1"align="center" width="10%"><input type="button" value="-"onclick="sub()"></td>
+			<td colspan="1"align="center" width="10%"><input type="button" value="*"onclick="multiply()"></td>
+			<td colspan="1"align="center" width="10%"><input type="button" value="/"onclick="divide()"></td>
+		</tr>
+		<tr bgcolor="white" align="center">
+			<td colspan="4"><input type="text" id="ans" class="fle"placeholder="YOUR ANSWER">
+		 </tr></table></form>
+
+</body>
+</html>
